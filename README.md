@@ -1,40 +1,39 @@
-# SEPluginTemplate
+# InstantExit
 
-This is a template to help you make a Space Engineers Plugin.
+A plugin to help you debug/develop Space Engineers plugins without the hassle of teminating the Space Engineers process every time you build the plugin.
 
-IMPORTANT: If Space Engineers closes and reopens with steam, you will need to create a text file called `steam_appid.txt` in the same directory as your Space Engineers Executable. Put only `244850` in the text file.
+## Plugin Installation
+To use the plugin, please install PluginLoader (https://github.com/austinvaness/PluginLoader). After you install PluginLoader successfully, go to the plugins menu from the main menu and select Instant Exit. Click Apply and you will be asked to restart the game. Click Yes to restart the game and you done! Manual Plugin Installation without PluginLoader is not supported!
 
-## Setup 
+## Manual Plugin Installation With PluginLoader 
 
-1. Download a Zip file copy of this repository. 
-![Screenshot (517)](https://user-images.githubusercontent.com/80211714/122436743-12449e00-cf67-11eb-9ea0-d139216f11cc.png)
+WARNING: Use this only if you could not get the normal plugin installation to work in anyway. Local plugins can be dangerous because these plugins are not checked by the authors of PluginLoader and you may accidentally run a virus or malware. USE AT YOUR OWN RISK.
 
-2. Extract to file to your directory that has your VS projects. Default is: `C:\Users\[Your User]\source\repos`
+If you need you install manually for any reason, here are the steps to install the plugin manually:
 
-3. Open the project folder and edit `PostBuild.bat`
+1. Click on this link to download the plugin directly: https://github.com/WesternGamer/CustomLoadingBackgrounds/releases/download/v1.0.0/CustomLoadingBackgrounds.dll
 
-4. Change [Project Location] to the directory of your project root folder. It should be`C:\Users\[Your User]\source\repos\SEPluginTemplate` if your project is in the default directory that VS uses.
+2. The browser that you are using may say that the plugin is dangerous. Click keep to keep the plugin. It may be hidden so you may need to click the arrow or dots next to the downloaded plugin.
 
-4.5: Change [Plugin Folder Location] to the directory of your plugins folder. Default is `C:\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\Plugins`.
+3. Go to your downloads folder and find the plugin file called `InstantExit.dll`.
 
-5. Save the file.
+4. Right click and the file and click cut.
 
-6. Now delete `.gitattributes` and `.gitignore` and `.git` These files are for this respository and are not required.
+5. Now open Steam and go to your Steam library.
 
-7. Open Visual Studio and click "Open a project or solution"
+6. Right click Space Engineers in the list to the left.
 
-8. Select `SEPluginTemplate` then  `SEPluginTemplate.sln`
+7. Click properties.
 
-9. The project should open.
+9. Go to Local Files and click Browse.
 
-10. You are done. If you plan to change the project name, you will need to edit `PostBuild.bat` and change the file name of the file ending in `.dll` to your project name.
+10. Click on the Bin64 folder and then the Plugins folder.
 
-11. You may now edit the project. When your are done, just go to the next section called "Build your plugin."
+11. Right click in the empty space in the folder and click paste.
 
-## Build your plugin
+12. Right click on the file you just pasted and click properties.
 
-To build your plugin, just click start and if you configured `PostBuild.bat` correctly, VS will build your plugin, move the plugin to the plugins folder, and start Space Engineers for you. You just need to enable the plugin in the plugins menu if you have SEPluginLoader installed! If you dont have SEPluginLoader installed, then head over to https://github.com/austinvaness/PluginLoader to see how to install it.
+13. At the bottom, click unblock then Apply. You can now close the window.
 
-If you have issues or need help, feel free to make new issue under the issues tab of this repository!
-
+15. Start Space Engineers and go to the plugins menu from the main menu and select `InstantExit.dll`. Click Apply and you will be asked to restart the game. Click Yes to restart the game and you done!
 
