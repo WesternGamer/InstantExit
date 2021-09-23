@@ -2,6 +2,10 @@
 
 A plugin to help you debug/develop Space Engineers plugins without the hassle of terminating the Space Engineers process every time you build the plugin.
 
+## How to use
+
+Just enable the plugin in the Plugins menu and that's it. You do not need to do anything with your Visual Studio project.
+
 ## Plugin Installation
 To use the plugin, please install PluginLoader (https://github.com/austinvaness/PluginLoader). After you install PluginLoader successfully, go to the plugins menu from the main menu and select Instant Exit. Click Apply and you will be asked to restart the game. Click Yes to restart the game and you done! Manual Plugin Installation without PluginLoader is not supported!
 
